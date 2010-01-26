@@ -1,6 +1,24 @@
 = number_postfixr
 
-Description goes here.
+I found the need to be able to have counting sequences from simple fixnums, and I didn't know what to search for to see if such functionality existed, so I just created it... Hope this helps somebody beyond just me.
+
+To install (gemcutter.org):
+   gem install number_postfixr
+To use:
+   require 'number_postfixr'
+
+   PostFixr.postfix(1)
+   #=>	"1st" 
+
+   PostFixr.postfix(18)
+   #=>	"18th"
+
+   PostFixr.postfix(103)
+   #=>	"103rd"
+
+   array = [1, 8, 19, 21, 108]
+   PostFixr.postfix_array(array)
+   #=>	["1st", "8th", "19th", "21st", "108th"]
 
 == Note on Patches/Pull Requests
  
