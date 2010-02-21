@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{number_postfixr}
-  s.version = "1.0.0"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Luke van der Hoeven"]
-  s.date = %q{2010-01-25}
+  s.date = %q{2010-01-26}
   s.description = %q{I found the need to be able to have counting sequences from simple fixnums, and I didn't know what to search for to see if such functionality existed, so I just created it... Hope this helps somebody beyond just me.}
   s.email = %q{hungerandthirst@gmail.com}
   s.extra_rdoc_files = [
@@ -24,6 +24,8 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/number_postfixr.rb",
+     "number_postfixr.gemspec",
+     "test.rb",
      "test/helper.rb",
      "test/test_number_postfixr.rb"
   ]

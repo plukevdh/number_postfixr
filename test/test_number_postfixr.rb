@@ -38,4 +38,11 @@ class TestNumberPostfixr < Test::Unit::TestCase
       assert_equal "96th", fixed[4]
       assert_equal "30th", fixed[5]
    end
+   
+   should "return correctly postfixed numbers from Numeric" do
+      assert_equal "1st", 1.postfix
+      assert_equal "22nd", 22.postfix
+      assert_equal "63rd", 63.postfix
+      assert_equal "19th", 19.postfix
+   end   
 end
